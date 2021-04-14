@@ -1,0 +1,149 @@
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $fs;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.l-container-center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 2em;
+  background: $clr-gray-100;
+  position: relative;
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+  }
+}
+
+.card {
+  $radius: 10px;
+  color: #fff;
+  padding: 3rem;
+
+  @media (min-width: 1280px) {
+    padding-right: 4rem;
+  }
+
+  &--orange {
+    background-color: $clr-orange-500;
+    border-radius: $radius $radius 0 0;
+    @media (min-width: 1280px) {
+      border-radius: $radius 0 0 $radius;
+    }
+  }
+
+  &--d-cyan {
+    background-color: $clr-cyan-700;
+  }
+
+  &--vd-cyan {
+    background-color: $clr-cyan-900;
+    border-radius: 0 0 $radius $radius;
+    @media (min-width: 1280px) {
+      border-radius: 0 $radius $radius 0;
+    }
+  }
+
+  &__title {
+    color: $clr-gray-100;
+    margin: 2rem 0 0 0;
+    font-family: $ff-title;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    margin: 2rem 0 0 0;
+    color: $clr-white-transparent;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: $ff-body;
+    width: 100%;
+    max-width: 50ch;
+
+    @media (min-width: 1280px) {
+      line-height: 1.7;
+      max-width: 14em;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: $clr-gray-100;
+  font-family: $ff-body;
+  font-size: 1.1em;
+  line-height: 1;
+  border: 2px solid $clr-gray-100;
+  border-radius: 2em;
+  padding: 0.9em 1.7em;
+  transition: background 0.1s ease-in-out;
+
+  &:hover {
+    color: $clr-gray-100;
+    background: transparent;
+  }
+
+  &--card {
+    margin: 2rem 0 0 0;
+
+    @media (min-width: 1280px) {
+      margin-top: 5rem;
+    }
+  }
+
+  &--orange {
+    color: $clr-orange-500;
+  }
+
+  &--d-cyan {
+    color: $clr-cyan-700;
+  }
+
+  &--vd-cyan {
+    color: $clr-cyan-900;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

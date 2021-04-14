@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.l-container-center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 2em;
+  background: #f2f2f2;
+  position: relative;
+}
+@media (min-width: 1280px) {
+  .l-container-center {
+    flex-direction: row;
+  }
+}
+
+.card {
+  color: #fff;
+  padding: 3rem;
+}
+@media (min-width: 1280px) {
+  .card {
+    padding-right: 4rem;
+  }
+}
+.card--orange {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+@media (min-width: 1280px) {
+  .card--orange {
+    border-radius: 10px 0 0 10px;
+  }
+}
+.card--d-cyan {
+  background-color: #006970;
+}
+.card--vd-cyan {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+@media (min-width: 1280px) {
+  .card--vd-cyan {
+    border-radius: 0 10px 10px 0;
+  }
+}
+.card__title {
+  color: #f2f2f2;
+  margin: 2rem 0 0 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.card__body {
+  margin: 2rem 0 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  width: 100%;
+  max-width: 50ch;
+}
+@media (min-width: 1280px) {
+  .card__body {
+    line-height: 1.7;
+    max-width: 14em;
+  }
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.1em;
+  line-height: 1;
+  border: 2px solid #f2f2f2;
+  border-radius: 2em;
+  padding: 0.9em 1.7em;
+  transition: background 0.1s ease-in-out;
+}
+.btn:hover {
+  color: #f2f2f2;
+  background: transparent;
+}
+.btn--card {
+  margin: 2rem 0 0 0;
+}
+@media (min-width: 1280px) {
+  .btn--card {
+    margin-top: 5rem;
+  }
+}
+.btn--orange {
+  color: #e38826;
+}
+.btn--d-cyan {
+  color: #006970;
+}
+.btn--vd-cyan {
+  color: #004241;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */
