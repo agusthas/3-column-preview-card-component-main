@@ -27,15 +27,14 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/agusthas/FEM_3-column-preview-card-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/agusthas/FEM_3-column-preview-card-component)
+- Live Site URL: [Live Site](https://agusthas.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
 ### Built with
 
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - SASS
 
