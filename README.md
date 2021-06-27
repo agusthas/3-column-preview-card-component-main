@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Code](https://github.com/agusthas/FEM_3-column-preview-card-component)
-- Live Site URL: [Live Site](https://agusthas.github.io/3-column-preview-card-component-main/)
+- Live Site URL: [Live Site](https://agusthas.github.io/FEM_3-column-preview-card-component/)
 
 ## My process
 
